@@ -15,6 +15,7 @@ function DarkModeButton() {
       className="app__dark-mode-btn icon level-right"
     >
       <FontAwesomeIcon
+        data-testid="svg-darkMode"
         icon={darkMode ? faSun : faMoon}
         color={darkMode ? 'white' : 'dark'}
       />
