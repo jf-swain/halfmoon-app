@@ -1,12 +1,8 @@
 import React, { useContext } from 'react';
 import { DarkModeContext } from '../../../../context/DarkModeContext';
+import { DarkModeContextType } from '../../../../@types/darkMode';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-
-interface DarkModeContextType {
-  darkMode: boolean;
-  toggleMode: () => void;
-}
 
 function DarkModeButton() {
   const { darkMode, toggleMode } = useContext(
