@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './styles/_main.scss';
 import reportWebVitals from './reportWebVitals';
 import Routes from './routes';
+import DarkModeContextProvider from './context/DarkModeContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Routes />
+    <DarkModeContextProvider>
+      <Routes />
+    </DarkModeContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

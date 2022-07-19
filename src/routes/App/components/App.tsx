@@ -1,6 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
+import DarkModeButton from './DarkModeButton/DarkModeButton';
+
 import './App.scss';
 
 function App() {
@@ -11,10 +11,7 @@ function App() {
           <h1 className="title">Isalid Dark Mode</h1>
         </div>
 
-        {/* --TODO: The button that should toggle dark mode-- */}
-        <button className="app__dark-mode-btn icon level-right">
-          <FontAwesomeIcon icon={faMoon} />
-        </button>
+        <DarkModeButton />
       </div>
 
       <div className="columns">
