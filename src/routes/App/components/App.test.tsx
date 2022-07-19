@@ -2,6 +2,10 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders app', () => {
-  // TODO: implement if the App renders and the h1 title is set
+test('Heading have correct text', () => {
+  render(<App />);
+
+  const headingH1 = screen.getByRole('heading', { level: 1 });
+
+  expect(headingH1.textContent).toBe('Isalid Dark Mode');
 });
